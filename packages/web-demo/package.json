@@ -1,0 +1,15 @@
+{
+  "name": "@node-canvas-experiment/web-demo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@node-canvas-experiment/measure": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^8.0.1"
+  }
+}

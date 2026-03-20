@@ -1,0 +1,6 @@
+{
+  "name": "@node-canvas-experiment/measure",
+  "type": "module",
+  "private": true,
+  "main": "src/measure.ts"
+}

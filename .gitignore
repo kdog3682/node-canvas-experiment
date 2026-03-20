@@ -6,10 +6,6 @@ out
 dist
 *.tgz
 
-# generated files
-output.pdf
-sample.png
-sample.svg
 
 # code coverage
 coverage

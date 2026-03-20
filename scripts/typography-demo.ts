@@ -25,13 +25,13 @@ FontLibrary.use('NewComputerModernMath', [
 ]);
 
 FontLibrary.use('Inconsolata', [
-  `${fontsDir}/Inconsolata-Regular.ttf`,
-  `${fontsDir}/Inconsolata-Bold.ttf`,
+  `${fontsDir}/inconsolata-regular.ttf`,
+  `${fontsDir}/inconsolata-bold.ttf`,
 ]);
 
 FontLibrary.use('Crimson Pro', [
-  `${fontsDir}/CrimsonPro-Regular.ttf`,
-  `${fontsDir}/CrimsonPro-Italic.ttf`,
+  `${fontsDir}/crimson-regular.ttf`,
+  `${fontsDir}/crimson-italic.ttf`,
 ]);
 
 // A4 in points
@@ -239,6 +239,6 @@ ctx.textAlign = 'center';
 ctx.fillText('Generated with skia-canvas \u00B7 Bun \u00B7 TypeScript', W / 2, y + 16);
 ctx.textAlign = 'left';
 
-const out = join(__dirname, '../output.pdf');
+const out = join(__dirname, '../artifacts/typography-demo.png');
 await canvas.toFile(out);
 console.log(`Saved \u2192 ${out}`);
