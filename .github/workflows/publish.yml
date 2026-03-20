@@ -23,5 +23,4 @@ jobs:
         working-directory: packages/measure
         run: bun publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          npm_config_registry: https://registry.npmjs.org/
+          BUN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
