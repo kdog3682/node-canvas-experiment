@@ -6,7 +6,7 @@ const root = resolve(__dirname, '../..');
 export default defineConfig({
   resolve: {
     alias: {
-      '@node-canvas-experiment/measure': resolve(root, 'packages/measure/src/measure.ts'),
+      '@node-canvas-experiment/measure': resolve(root, 'packages/measure/index.ts'),
     },
   },
   server: {

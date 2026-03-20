@@ -1,4 +1,4 @@
-import metrics from '../../../font-metrics.json';
+import metrics from '../font-metrics.json';
 
 export type FontKey = keyof typeof metrics;
 

@@ -11,14 +11,7 @@ import ncmItalic           from '../../../fonts/ncm-italic.ttf';
 import ncmBoldItalic       from '../../../fonts/ncm-bold-italic.ttf';
 import ncmMath             from '../../../fonts/ncm-math.ttf';
 
-// Maps short alias → CSS font-family name used in ctx.font
-export const CSS_FAMILY: Record<string, string> = {
-  crimson:     'Crimson Pro',
-  libertinus:  'Libertinus Serif',
-  inconsolata: 'Inconsolata',
-  ncm:         'NewComputerModern',
-  'ncm-math':  'NewComputerModernMath',
-};
+export { CSS_FAMILY } from '@node-canvas-experiment/measure';
 
 const SRCS = [
   { family: 'Crimson Pro',           style: 'normal', weight: '400', src: crimsonRegular },

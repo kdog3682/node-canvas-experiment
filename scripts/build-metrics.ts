@@ -68,6 +68,6 @@ for (const { key, path } of FONTS) {
   console.log(`✓ ${key}  (${Object.keys(glyphs).length} glyphs, ${Object.keys(kerning).length} kern pairs, upm=${font.unitsPerEm})`);
 }
 
-const outPath = join(__dirname, '../font-metrics.json');
+const outPath = join(__dirname, '../packages/measure/font-metrics.json');
 writeFileSync(outPath, JSON.stringify(output, null, 2));
 console.log(`\nWrote ${outPath}`);

@@ -1,6 +1,17 @@
 {
   "name": "@node-canvas-experiment/measure",
+  "version": "0.1.0",
+  "description": "Precomputed font metrics for fast text measurement without a canvas context",
   "type": "module",
-  "private": true,
-  "main": "src/measure.ts"
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "index.ts",
+    "src/",
+    "font-metrics.json"
+  ],
+  "keywords": ["font", "metrics", "typography", "canvas", "text-measurement"],
+  "license": "MIT"
 }
