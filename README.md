@@ -14,7 +14,7 @@ Canvas-based rendering, font metrics, and typography using skia-canvas and Bun.
 │   ├── measure/                 # @kdog3682/node-canvas-experiment (published to npm)
 │   │   ├── src/
 │   │   │   ├── measure.ts       # measureText(), FontKey
-│   │   │   └── families.ts      # CSS_FAMILY alias map
+│   │   │   └── families.ts      # FONT_ALIASES alias map
 │   │   ├── index.ts             # barrel export
 │   │   └── font-metrics.json    # precomputed glyph + kerning data
 │   └── web-demo/                # @node-canvas-experiment/web-demo — Vite browser demo
@@ -63,22 +63,25 @@ import { type FontKey } from '@kdog3682/node-canvas-experiment';
 
 Available keys: `crimson-regular`, `crimson-italic`, `inconsolata-regular`, `inconsolata-bold`, `libertinus-regular`, `libertinus-bold`, `libertinus-italic`, `libertinus-bold-italic`, `ncm-regular`, `ncm-bold`, `ncm-italic`, `ncm-bold-italic`, `ncm-math`
 
-#### `CSS_FAMILY`
+#### `FONT_ALIASES`
 
 Maps short aliases to CSS font-family names for use with `ctx.font` or the FontFace API.
 
 ```ts
-import { CSS_FAMILY } from '@kdog3682/node-canvas-experiment';
+import { FONT_ALIASES } from '@kdog3682/node-canvas-experiment';
 
-// CSS_FAMILY = {
+// FONT_ALIASES = {
 //   crimson:     'Crimson Pro',
 //   libertinus:  'Libertinus Serif',
 //   inconsolata: 'Inconsolata',
 //   ncm:         'NewComputerModern',
 //   'ncm-math':  'NewComputerModernMath',
+//   serif:       'Libertinus Serif',
+//   monospace:   'Inconsolata',
+//   math:        'NewComputerModernMath',
 // }
 
-ctx.font = `24px "${CSS_FAMILY['libertinus']}"`;
+ctx.font = `24px "${FONT_ALIASES['libertinus']}"`;
 ```
 
 ## Scripts

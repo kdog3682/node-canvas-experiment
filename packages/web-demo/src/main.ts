@@ -1,5 +1,5 @@
 import { measureText, type FontKey } from '@kdog3682/node-canvas-experiment';
-import { loadFonts, CSS_FAMILY } from './fonts';
+import { loadFonts, FONT_ALIASES } from './fonts';
 
 type Sample = {
   text: string;
@@ -63,7 +63,7 @@ function draw() {
     const rx = MARGIN;
     const ry = row.rowY + PAD_Y;
     const baseline = ry + row.ascent;
-    const family = CSS_FAMILY[row.font] ?? row.font;
+    const family = FONT_ALIASES[row.font] ?? row.font;
 
     ctx.fillStyle = row.rect + '20';
     ctx.fillRect(rx, ry, row.width, row.height);
