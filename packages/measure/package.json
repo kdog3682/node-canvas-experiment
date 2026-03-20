@@ -16,7 +16,7 @@
     "font-metrics.json"
   ],
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./dist --target node && bun x tsc --declaration --emitDeclarationOnly --outDir ./dist"
+    "build": "bun build ./index.ts --outdir ./dist --target node && tsc -p tsconfig.json"
   },
   "keywords": ["font", "metrics", "typography", "canvas", "text-measurement"],
   "license": "MIT"
