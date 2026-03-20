@@ -11,7 +11,7 @@ Canvas-based rendering, font metrics, and typography using skia-canvas and Bun.
 ├── font-convert/                # uv project: converts OTF/CFF → TTF (glyf) for browser compatibility
 ├── fonts/                       # bundled TTF font files (kebab-case normalized names)
 ├── packages/
-│   ├── measure/                 # @node-canvas-experiment/measure (published to npm)
+│   ├── measure/                 # @kdog3682/node-canvas-experiment (published to npm)
 │   │   ├── src/
 │   │   │   ├── measure.ts       # measureText(), FontKey
 │   │   │   └── families.ts      # CSS_FAMILY alias map
@@ -27,12 +27,12 @@ Canvas-based rendering, font metrics, and typography using skia-canvas and Bun.
 │   └── verify-metrics.ts        # renders bounding box accuracy verification
 ```
 
-## `@node-canvas-experiment/measure`
+## `@kdog3682/node-canvas-experiment`
 
 Fast text measurement using precomputed font metrics — no canvas context required.
 
 ```
-npm install @node-canvas-experiment/measure
+npm install @kdog3682/node-canvas-experiment
 ```
 
 ### API
@@ -42,7 +42,7 @@ npm install @node-canvas-experiment/measure
 Measures a string at a given size using precomputed metrics. Returns sub-pixel accurate dimensions for layout without needing a canvas.
 
 ```ts
-import { measureText } from '@node-canvas-experiment/measure';
+import { measureText } from '@kdog3682/node-canvas-experiment';
 
 const { width, height, ascent } = measureText('Hello world', 'libertinus-regular', 24);
 ```
@@ -58,7 +58,7 @@ const { width, height, ascent } = measureText('Hello world', 'libertinus-regular
 Union type of all valid metric keys. Use for type-safe key references.
 
 ```ts
-import { type FontKey } from '@node-canvas-experiment/measure';
+import { type FontKey } from '@kdog3682/node-canvas-experiment';
 ```
 
 Available keys: `crimson-regular`, `crimson-italic`, `inconsolata-regular`, `inconsolata-bold`, `libertinus-regular`, `libertinus-bold`, `libertinus-italic`, `libertinus-bold-italic`, `ncm-regular`, `ncm-bold`, `ncm-italic`, `ncm-bold-italic`, `ncm-math`
@@ -68,7 +68,7 @@ Available keys: `crimson-regular`, `crimson-italic`, `inconsolata-regular`, `inc
 Maps short aliases to CSS font-family names for use with `ctx.font` or the FontFace API.
 
 ```ts
-import { CSS_FAMILY } from '@node-canvas-experiment/measure';
+import { CSS_FAMILY } from '@kdog3682/node-canvas-experiment';
 
 // CSS_FAMILY = {
 //   crimson:     'Crimson Pro',

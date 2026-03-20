@@ -1,5 +1,5 @@
 {
-  "name": "@node-canvas-experiment/measure",
+  "name": "@kdog3682/node-canvas-experiment",
   "version": "0.1.0",
   "description": "Precomputed font metrics for fast text measurement without a canvas context",
   "type": "module",

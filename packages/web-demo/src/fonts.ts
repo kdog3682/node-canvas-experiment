@@ -11,7 +11,7 @@ import ncmItalic           from '../../../fonts/ncm-italic.ttf';
 import ncmBoldItalic       from '../../../fonts/ncm-bold-italic.ttf';
 import ncmMath             from '../../../fonts/ncm-math.ttf';
 
-export { CSS_FAMILY } from '@node-canvas-experiment/measure';
+export { CSS_FAMILY } from '@kdog3682/node-canvas-experiment';
 
 const SRCS = [
   { family: 'Crimson Pro',           style: 'normal', weight: '400', src: crimsonRegular },

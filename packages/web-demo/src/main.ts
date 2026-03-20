@@ -1,4 +1,4 @@
-import { measureText, type FontKey } from '@node-canvas-experiment/measure';
+import { measureText, type FontKey } from '@kdog3682/node-canvas-experiment';
 import { loadFonts, CSS_FAMILY } from './fonts';
 
 type Sample = {

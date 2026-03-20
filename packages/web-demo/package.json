@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@node-canvas-experiment/measure": "workspace:*"
+    "@kdog3682/node-canvas-experiment": "workspace:*"
   },
   "devDependencies": {
     "vite": "^8.0.1"

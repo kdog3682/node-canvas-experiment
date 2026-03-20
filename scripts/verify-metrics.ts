@@ -1,7 +1,7 @@
 import { Canvas, FontLibrary } from 'skia-canvas';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { measureText } from '@node-canvas-experiment/measure';
+import { measureText } from '@kdog3682/node-canvas-experiment';
 import metrics from '../packages/measure/font-metrics.json' assert { type: 'json' };
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
