@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "description": "Precomputed font metrics for fast text measurement without a canvas context",
   "type": "module",
-  "main": "index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./index.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "files": [
-    "index.ts",
-    "src/",
+    "dist/",
     "font-metrics.json"
   ],
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist --target node && bun x tsc --declaration --emitDeclarationOnly --outDir ./dist"
+  },
   "keywords": ["font", "metrics", "typography", "canvas", "text-measurement"],
   "license": "MIT"
 }

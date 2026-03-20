@@ -15,6 +15,10 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Build
+        working-directory: packages/measure
+        run: bun run build
+
       - name: Publish
         working-directory: packages/measure
         run: bun publish --access public
